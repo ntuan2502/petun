@@ -25,6 +25,7 @@ class ApiController extends Controller
         if (Auth::attempt($userdata) === false) {
             return response()->json([
                 'status' => 0,
+                'infomation' => null
             ]);
         } else {
             return response()->json([
