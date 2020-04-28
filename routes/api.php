@@ -19,3 +19,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('/getBackground', 'ApiController@getBackground');
+Route::post('/postLogin', 'ApiController@postLogin');
