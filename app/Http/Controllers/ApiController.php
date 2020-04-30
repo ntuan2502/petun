@@ -97,7 +97,7 @@ class ApiController extends Controller
     public function getServerAppVersion(){
         return response()->json([
             'version' => "1.0",
-            'url' => 'https://facebook.com/ntuan.2502'
+            'url' => ''
         ]);
     }
 }
