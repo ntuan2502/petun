@@ -23,3 +23,4 @@ Route::post('/postLogin', 'ApiController@postLogin');
 Route::get('/getAio', 'ApiController@getAio');
 Route::get('/getMod', 'ApiController@getMod');
 Route::get('/getNormal', 'ApiController@getNormal');
+Route::get('/getSocialMedia', 'ApiController@getSocialMedia');

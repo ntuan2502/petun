@@ -17,20 +17,29 @@ class ApiController extends Controller
 
     public function postLogin(Request $request)
     {
-        $userdata = array(
-            'email'     => $request->username,
-            'password'  => $request->password
-        );
-
-        if (Auth::attempt($userdata) === false) {
+        if($request->username == "test" && $request->password == "test"){
             return response()->json([
-                'infomation' => null
+                'infomation' => true
             ]);
-        } else {
+        }else{
             return response()->json([
-                'infomation' => Auth::user()
+                'infomation' => false
             ]);
         }
+        // $userdata = array(
+        //     'email'     => $request->username,
+        //     'password'  => $request->password
+        // );
+
+        // if (Auth::attempt($userdata) === false) {
+        //     return response()->json([
+        //         'infomation' => null
+        //     ]);
+        // } else {
+        //     return response()->json([
+        //         'infomation' => Auth::user()
+        //     ]);
+        // }
     }
 
     public function getAio(){
@@ -67,6 +76,16 @@ class ApiController extends Controller
             'xml' => $xml,
             'config64' => $config64,
             'config' => $config
+        ]);
+    }
+    public function getSocialMedia(){
+        $facebook = "https://www.facebook.com/pkl.nat/";
+        $youtube = "https://www.youtube.com/channel/UCXeaaQQ3pFsdLMtD7HaIlfg";
+        $discord = "https://discord.gg/JtcN8yF";
+        return response()->json([
+            'facebook' => $facebook,
+            'youtube' => $youtube,
+            'discord' => $discord,
         ]);
     }
 }
