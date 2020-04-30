@@ -88,4 +88,16 @@ class ApiController extends Controller
             'discord' => $discord,
         ]);
     }
+
+    public function getServerVersion(){
+        return response()->json([
+            'version' => "1121"
+        ]);
+    }
+    public function getServerAppVersion(){
+        return response()->json([
+            'version' => "1.0",
+            'url' => 'https://facebook.com/ntuan.2502'
+        ]);
+    }
 }
