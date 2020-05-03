@@ -96,8 +96,8 @@ class ApiController extends Controller
     }
     public function getServerAppVersion(){
         return response()->json([
-            'version' => "1.0.1",
-            'url' => 'https://github.com/bnsvn/bnsvn.github.io/raw/master/BnsvnModInstaller_1.0.1.msi'
+            'version' => "1.0.2.0",
+            'url' => 'https://github.com/bnsvn/bnsvn.github.io/raw/master/BnsvnModInstaller_1.0.2.0.msi'
         ]);
     }
 }
