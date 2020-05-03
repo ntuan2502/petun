@@ -91,7 +91,7 @@ class ApiController extends Controller
 
     public function getServerVersion(){
         return response()->json([
-            'version' => "1120"
+            'version' => "1121"
         ]);
     }
     public function getServerAppVersion(){
