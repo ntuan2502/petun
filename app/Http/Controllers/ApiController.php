@@ -43,10 +43,10 @@ class ApiController extends Controller
     }
 
     public function getAio(){
-        $xml64 = "https://github.com/bnsvn/bnsvn.github.io/raw/master/aio/2020-4-29/xml64.dat";
-        $xml = "https://github.com/bnsvn/bnsvn.github.io/raw/master/aio/2020-4-29/xml.dat";
-        $config64 = "https://github.com/bnsvn/bnsvn.github.io/raw/master/aio/2020-4-29/config64.dat";
-        $config = "https://github.com/bnsvn/bnsvn.github.io/raw/master/aio/2020-4-29/config.dat";
+        $xml64 = "https://github.com/bnsvn/bnsvn.github.io/raw/master/aio/xml64.dat";
+        $xml = "https://github.com/bnsvn/bnsvn.github.io/raw/master/aio/xml.dat";
+        $config64 = "https://github.com/bnsvn/bnsvn.github.io/raw/master/aio/config64.dat";
+        $config = "https://github.com/bnsvn/bnsvn.github.io/raw/master/aio/config.dat";
         return response()->json([
             'xml64' => $xml64,
             'xml' => $xml,
@@ -55,10 +55,10 @@ class ApiController extends Controller
         ]);
     }
     public function getMod(){
-        $xml64 = "https://github.com/bnsvn/bnsvn.github.io/raw/master/cb/2020-4-29/xml64.dat";
-        $xml = "https://github.com/bnsvn/bnsvn.github.io/raw/master/cb/2020-4-29/xml.dat";
-        $config64 = "https://github.com/bnsvn/bnsvn.github.io/raw/master/cb/2020-4-29/config64.dat";
-        $config = "https://github.com/bnsvn/bnsvn.github.io/raw/master/cb/2020-4-29/config.dat";
+        $xml64 = "https://github.com/bnsvn/bnsvn.github.io/raw/master/cb/xml64.dat";
+        $xml = "https://github.com/bnsvn/bnsvn.github.io/raw/master/cb/xml.dat";
+        $config64 = "https://github.com/bnsvn/bnsvn.github.io/raw/master/cb/config64.dat";
+        $config = "https://github.com/bnsvn/bnsvn.github.io/raw/master/cb/config.dat";
         return response()->json([
             'xml64' => $xml64,
             'xml' => $xml,
@@ -67,10 +67,10 @@ class ApiController extends Controller
         ]);
     }
     public function getNormal(){
-        $xml64 = "https://github.com/bnsvn/bnsvn.github.io/raw/master/nor/2020-4-29/xml64.dat";
-        $xml = "https://github.com/bnsvn/bnsvn.github.io/raw/master/nor/2020-4-29/xml.dat";
-        $config64 = "https://github.com/bnsvn/bnsvn.github.io/raw/master/nor/2020-4-29/config64.dat";
-        $config = "https://github.com/bnsvn/bnsvn.github.io/raw/master/nor/2020-4-29/config.dat";
+        $xml64 = "https://github.com/bnsvn/bnsvn.github.io/raw/master/nor/xml64.dat";
+        $xml = "https://github.com/bnsvn/bnsvn.github.io/raw/master/nor/xml.dat";
+        $config64 = "https://github.com/bnsvn/bnsvn.github.io/raw/master/nor/config64.dat";
+        $config = "https://github.com/bnsvn/bnsvn.github.io/raw/master/nor/config.dat";
         return response()->json([
             'xml64' => $xml64,
             'xml' => $xml,
@@ -91,7 +91,7 @@ class ApiController extends Controller
 
     public function getServerVersion(){
         return response()->json([
-            'version' => "1121"
+            'version' => "1122"
         ]);
     }
     public function getServerAppVersion(){
